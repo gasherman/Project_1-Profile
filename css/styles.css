@@ -27,6 +27,7 @@ main {
 }
 
 
+
 /* Section Styles */
 
 .main-nav {
@@ -121,6 +122,20 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
+  border-color: #FFD800;
+}
+
+.cardfp {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.cardfp:hover {
   border-color: #FFD800;
 }
 
@@ -244,6 +259,12 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
+  .site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
@@ -252,6 +273,7 @@ a.social:hover {
       justify-content: space-around;
       margin: 0 auto;
       flex-wrap: wrap;
+      flex: 1;
   }
 
   .main-header {
